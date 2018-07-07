@@ -1,0 +1,8 @@
+body {
+    background: #f00;
+    display: flex;
+
+    > * {
+        flex: 0 0 1%;
+    }
+}

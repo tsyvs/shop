@@ -1,0 +1,11 @@
+$font:            400 16px/1 sans-serif;
+
+$default-color: #000;
+$default-bg:    #eee;
+
+$link-color:    #000000;
+$link-hover:    lighten($link-color, 50%);
+
+$content-width: 800px;
+$col-left:      ($content-width / 4);
+$col-right:     ($content-width - $col-left);

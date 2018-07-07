@@ -1,0 +1,9 @@
+@mixin make_link_darker($color, $amount) {
+    a {
+        color: $color;
+
+        &:hover {
+            color: darken($color, $amount);
+        }
+    }
+}
