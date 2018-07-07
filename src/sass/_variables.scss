@@ -1,11 +1,20 @@
-$font:            400 16px/1 sans-serif;
+// normalize.scss
 
-$default-color: #000;
-$default-bg:    #eee;
+$font-family-base:   sans-serif;
+$font-size-base:     16px;
+$font-weight-base:   400;
+$line-height-base:   1;
 
-$link-color:    #000000;
-$link-hover:    lighten($link-color, 50%);
+$body-color:   #000;
+$body-bg:      #fff;
 
-$content-width: 800px;
-$col-left:      ($content-width / 4);
-$col-right:     ($content-width - $col-left);
+$headings-margin-bottom:   1rem;
+$paragraph-margin-bottom:  1rem;
+
+$link-color: inherit;
+$link-decoration: none;
+
+$link-hover-color: inherit;
+$link-hover-decoration: none;
+
+$label-margin-bottom: 0;
