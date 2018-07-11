@@ -9,14 +9,30 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<!-- <body class="no-sidebar"> -->
+<body class="no-sidebar">
 <!-- <body class="sidebar-left"> -->
-<body class="sidebar-right">
+<!-- <body class="sidebar-right"> -->
+
+    <header>
+        <!-- First line -->
+        //= ./html_components/main-menu.html
+    </header>
 
     <!-- //= ./html_components/header.html -->
-    <main>
-        main contents here
-    </main>
+    <div id="main-wrapper">
+        <main>
+            main contents here
+        </main>
+    </div>
+
+    <aside id="search">
+        <h2>Welcome To Foxtar Market Place!</h2>
+        <p>Premium WordPress Themes, Web Templates and Many More ...</p>
+            <form id="form-search">
+                <input type="search" class="form-control" placeholder="Search Your Keywords . . . ">
+                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+    </aside>
     <!-- //= ./html_components/footer.html -->
 </body>
 
