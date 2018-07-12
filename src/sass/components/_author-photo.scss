@@ -1,0 +1,40 @@
+.photo {
+    &,
+    &-big,
+    &-small,
+    &-square {
+        display: inline-block;
+        line-height: 0;
+    }
+
+    &,
+    &-big,
+    &-small {
+        border-radius: 50%;
+    }
+
+    & {
+        width: 34px;
+        height: 34px;
+    }
+
+    &-big {
+        width: 48px;
+        height: 48px;
+    }
+
+    &-small {
+        width: 30px;
+        height: 30px;
+    }
+
+    &-square {
+        width: 73px;
+        height: 63px;
+        
+        img {
+            margin-top: -5px;
+            margin-bottom: -5px;
+        }
+    }
+}
