@@ -84,7 +84,7 @@ gulp.task('style:build', function () {
         }))
         .pipe(prefixer())
         .pipe(cssmin())
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
 });
