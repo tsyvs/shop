@@ -4,7 +4,7 @@
     &-small,
     &-square {
         display: inline-block;
-        line-height: 0;
+        overflow: hidden;
     }
 
     &,
