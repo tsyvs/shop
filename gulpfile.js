@@ -96,7 +96,7 @@ gulp.task('tinypng', function () {
 				'./src/img_to_minify/**/*.png'
 			]
 		)
-		.pipe(tinypng('IuR_d2OaAdW514CBf9vc7ld8p_NM3gtp'))
+		.pipe(tinypng('7DjDuuwkwESUXiHtxULH61Xskr8HVF3U'))
 		.pipe(gulp.dest('./src/img'));
 });
 
