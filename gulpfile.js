@@ -50,7 +50,7 @@ var config = {
     logPrefix: "EasyCode_Shop"
 };
 
-gulp.task('webserver', function () {
+gulp.task('webserver', function() {
     browserSync(config);
 });
 
@@ -58,11 +58,11 @@ gulp.task('webserver', function () {
 //     rimraf(path.clean, cb);
 // });
 
-gulp.task('html:build', function () {
-    gulp.src(path.src.html) 
+gulp.task('html:build', function() {
+    gulp.src(path.src.html)
         .pipe(rigger())
         .pipe(gulp.dest(path.build.html))
-        .pipe(reload({stream: true}));
+        .pipe(reload({ stream: true }));
 });
 
 // gulp.task('js:build', function () {
@@ -75,8 +75,8 @@ gulp.task('html:build', function () {
 //         .pipe(reload({stream: true}));
 // });
 
-gulp.task('style:build', function () {
-    gulp.src(path.src.style) 
+gulp.task('style:build', function() {
+    gulp.src(path.src.style)
         .pipe(sourcemaps.init())
         .pipe(sass({
             sourceMap: true,
@@ -86,41 +86,40 @@ gulp.task('style:build', function () {
         .pipe(cssmin())
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(path.build.css))
-        .pipe(reload({stream: true}));
+        .pipe(reload({ stream: true }));
 });
 
-gulp.task('tinypng', function () {
-	return gulp.src(
-			[
-				'./src/img_to_minify/**/*.jpg',
-				'./src/img_to_minify/**/*.png'
-			]
-		)
-		.pipe(tinypng('IuR_d2OaAdW514CBf9vc7ld8p_NM3gtp'))
-		.pipe(gulp.dest('./src/img'));
+gulp.task('tinypng', function() {
+    return gulp.src(
+            [
+                './src/img_to_minify/**/*.jpg',
+                './src/img_to_minify/**/*.png'
+            ]
+        )
+        .pipe(tinypng('yHlxibxjqM7oHF8QyOtZ239Cr4gBBomL'))
+        .pipe(gulp.dest('./src/img'));
 });
 
-gulp.task('del', function () {
-	return del(
-			[
-				'./src/img_to_minify/**/*.jpg',
-				'./src/img_to_minify/**/*.png'
-			],
-			{ force: true }
-		)
-		.then(paths => {
-			console.log('Deleted: ', paths.join('\n'));
-		});
+gulp.task('del', function() {
+    return del(
+            [
+                './src/img_to_minify/**/*.jpg',
+                './src/img_to_minify/**/*.png'
+            ], { force: true }
+        )
+        .then(paths => {
+            console.log('Deleted: ', paths.join('\n'));
+        });
 });
 
-gulp.task('minify', function () {
-	runSequence('tinypng', 'del');
+gulp.task('minify', function() {
+    runSequence('tinypng', 'del');
 });
 
-gulp.task('image:build', function () {
+gulp.task('image:build', function() {
     gulp.src(path.src.img)
         .pipe(gulp.dest(path.build.img))
-        .pipe(reload({stream: true}));
+        .pipe(reload({ stream: true }));
 });
 
 gulp.task('fonts:build', function() {
@@ -137,7 +136,7 @@ gulp.task('build', [
 ]);
 
 
-gulp.task('watch', function(){
+gulp.task('watch', function() {
     watch([path.watch.html], function(event, cb) {
         gulp.start('html:build');
     });

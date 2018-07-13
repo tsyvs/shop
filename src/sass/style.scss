@@ -1,14 +1,11 @@
 @import "variables";
 @import "mixin";
-
 @import "fonts";
-
 @import "normalize";
 @import "grid";
-
 // custom styles here
 @import "components/page-layout";
 @import "components/main-menu";
 @import "components/search";
-
+@import "components/buttons";
 @import "fontawesome";
