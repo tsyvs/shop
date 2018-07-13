@@ -1,0 +1,23 @@
+#main-menu {
+   background: $color-dark-primary;
+   color: $color-light-primary;
+   font-size: 14px;
+
+   ul {
+      display: flex;
+      align-items: center;
+      height: 60px;
+
+      li + li {
+         margin-left: 32px;
+      }
+   }
+
+   a {
+      transition: color .3s;
+
+      &:hover {
+         color: $color-accent-1;
+      }
+   }
+}
