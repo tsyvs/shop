@@ -14,7 +14,7 @@
     .btn {
         display: inline-block;
         text-align: center;
-        padding: 14px 38px 12px 38px;
+        padding: 14px 38px 12px;
         font-family: $font-family-base;
         font-size: 15px;
         line-height: $line-height-base;
@@ -23,30 +23,30 @@
     /* BTN SIZE */
     
     .btn-small {
-        padding: 11px .5em 10px .5em;
+        padding: 11px .5em 10px;
         border-radius: 3px;
         min-width: 72px;
         font-size: 12px;
     }
     
     .btn-medium {
-        padding: 11px 21px 10px 21px;
+        padding: 11px 21px 10px;
         font-weight: 700;
         font-size: 14px;
     }
     
     .btn-big {
-        padding: 16px 38px 15px 38px;
+        padding: 16px 38px 15px;
         font-weight: 500;
     }
     
     .btn-bigger {
-        padding: 18px 27px 17px 27px;
+        padding: 18px 27px 17px;
         font-weight: 500;
     }
     
     .btn-great {
-        padding: 19px .5em 18px .5em;
+        padding: 19px .5em 18px;
         box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
         min-width: 163px;
     }
