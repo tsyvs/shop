@@ -1,14 +1,14 @@
 #sidebar.section {
   background: $color-light-primary;
-  border: 1px solid #dedede;
-  padding: 18px 30px 26px;
+  border: 1px solid $color-border-2;
+  padding: 23px 30px 26px;
   
     .title {
       font-weight: 700;
       font-size: 20px;
-      line-height: 60px;
+      line-height: 1.3;
       color: $color-dark-primary;
-      margin-bottom: 0;
-      border-bottom: 1px solid #dde3e8;
+      margin-bottom: 26px;
+      border-bottom: 1px solid $color-border-1;
   }
 }
