@@ -82,7 +82,10 @@ gulp.task('style:build', function () {
             sourceMap: true,
             errLogToConsole: true
         }))
-        .pipe(prefixer())
+        .pipe(prefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(cssmin())
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(path.build.css))
