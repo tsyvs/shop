@@ -25,7 +25,7 @@
   "dependencies": {
     "browser-sync": "latest",
     "del": "latest",
-    "gulp": "^3.9.1",
+    "gulp": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-minify-css": "latest",
     "gulp-rigger": "latest",
