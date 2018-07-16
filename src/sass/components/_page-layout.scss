@@ -1,0 +1,20 @@
+body {
+   display: flex;
+   flex-direction: column;
+}
+
+header {
+   order: 0;
+}
+
+#main-wrapper {
+   order: 2;
+}
+
+#search {
+   order: 1;
+}
+
+footer {
+   order: 3;
+}

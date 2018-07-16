@@ -6,6 +6,9 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     rigger = require('gulp-rigger'),
     cssmin = require('gulp-minify-css'),
+    tinypng = require('gulp-tinypng'),
+    del = require('del'),
+    runSequence = require('run-sequence'),
     // imagemin = require('gulp-imagemin'),
     // pngquant = require('imagemin-pngquant'),
     // rimraf = require('rimraf'),
@@ -56,24 +59,24 @@ gulp.task('webserver', function () {
 // });
 
 gulp.task('html:build', function () {
-    gulp.src(path.src.html) 
+    gulp.src(path.src.html)
         .pipe(rigger())
         .pipe(gulp.dest(path.build.html))
         .pipe(reload({stream: true}));
 });
 
 // gulp.task('js:build', function () {
-//     gulp.src(path.src.js) 
-//         .pipe(rigger()) 
-//         .pipe(sourcemaps.init()) 
-//         .pipe(uglify()) 
-//         .pipe(sourcemaps.write()) 
+//     gulp.src(path.src.js)
+//         .pipe(rigger())
+//         .pipe(sourcemaps.init())
+//         .pipe(uglify())
+//         .pipe(sourcemaps.write())
 //         .pipe(gulp.dest(path.build.js))
 //         .pipe(reload({stream: true}));
 // });
 
 gulp.task('style:build', function () {
-    gulp.src(path.src.style) 
+    gulp.src(path.src.style)
         .pipe(sourcemaps.init())
         .pipe(sass({
             sourceMap: true,
@@ -81,22 +84,44 @@ gulp.task('style:build', function () {
         }))
         .pipe(prefixer())
         .pipe(cssmin())
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
 });
 
-// gulp.task('image:build', function () {
-//     gulp.src(path.src.img) 
-//         .pipe(imagemin({
-//             progressive: true,
-//             svgoPlugins: [{removeViewBox: false}],
-//             use: [pngquant()],
-//             interlaced: true
-//         }))
-//         .pipe(gulp.dest(path.build.img))
-//         .pipe(reload({stream: true}));
-// });
+gulp.task('tinypng', function () {
+	return gulp.src(
+			[
+				'./src/img_to_minify/**/*.jpg',
+				'./src/img_to_minify/**/*.png'
+			]
+		)
+		.pipe(tinypng('IuR_d2OaAdW514CBf9vc7ld8p_NM3gtp'))
+		.pipe(gulp.dest('./src/img'));
+});
+
+gulp.task('del', function () {
+	return del(
+			[
+				'./src/img_to_minify/**/*.jpg',
+				'./src/img_to_minify/**/*.png'
+			],
+			{ force: true }
+		)
+		.then(paths => {
+			console.log('Deleted: ', paths.join('\n'));
+})
+});
+
+gulp.task('minify', function () {
+	runSequence('tinypng', 'del');
+});
+
+gulp.task('image:build', function () {
+    gulp.src(path.src.img)
+        .pipe(gulp.dest(path.build.img))
+        .pipe(reload({stream: true}));
+});
 
 gulp.task('fonts:build', function() {
     gulp.src(path.src.fonts)
@@ -108,7 +133,7 @@ gulp.task('build', [
     // 'js:build',
     'style:build',
     'fonts:build',
-    // 'image:build'
+    'image:build'
 ]);
 
 

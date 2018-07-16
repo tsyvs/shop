@@ -135,6 +135,8 @@ ol,
 ul {
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
 ol ol,
@@ -270,6 +272,8 @@ a:not([href]):not([tabindex]) {
 //
 
 img {
+  min-width: 100%;
+  height: auto;
   vertical-align: middle;
   border: 0; // Remove the border on images inside links in IE 10-.
 }

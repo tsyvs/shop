@@ -7,5 +7,9 @@
 @import "grid";
 
 // custom styles here
+@import "components/page-layout";
+@import "components/main-menu";
+@import "components/search";
 
-@import "fontawesome"
+@import "components/counter";
+@import "fontawesome";
