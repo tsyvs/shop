@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .count {
     &::before,
     &::after
@@ -13,3 +14,19 @@
         content: ")";
     }
 }
+=======
+span .count::before {
+    content: "(";
+    color: $color-dark-text;
+}
+
+span .count {
+    font-family: robotoregular, 'open-sans', sans-serif;
+    font-size: 12px;
+}
+
+span .count::after {
+    content: ")";
+    color: $color-dark-text;
+}
+>>>>>>> 2710e3507b7dc9b4bed2a404ee43b21a408554d6
