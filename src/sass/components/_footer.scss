@@ -1,0 +1,35 @@
+#footer {
+    background: $color-dark-primary;
+
+    .title {
+        padding-bottom: 21px;
+        font-family: $font-family-base;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 24px;
+        color: $color-light-primary;
+    }
+
+    .title::after {
+        content: '';
+        display: block;
+        width: 51px;
+        height: 3px;
+        background: $color-accent-1;
+        position: absolute;
+    }
+
+    .copyright {
+        border-top: 1px solid #424d53;
+        text-align: center; 
+
+        p {
+            padding-top: 27px;
+            padding-bottom: 32px;
+            font-family: $font-family-base;
+	        font-weight: $font-weight-base;
+	        font-size: 15px;
+            color: #919699;
+        }
+    }
+}
