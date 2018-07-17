@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+.statement {
+    background: $color-light-primary;
+    border: 1px solid $color-border-2;
+    font-family: $font-family-base;
+    line-height: $line-height-base;
+    color: $color-dark-primary;
+    .title {
+        padding: 22px 32px 25px;
+        border-bottom: 1px solid $color-border-2;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .table-sales {
+        padding: 35px 35px 80px 35px;
+        table {
+            width: 100%;
+            font-size: 14px;
+            td {
+                padding: 23px 25px;
+            }
+            thead {
+                background: #455a64;
+                color: $color-light-primary;
+            }
+            tbody {
+                color: #333;
+                span {
+                    background: $color-img-photo;
+                }
+                tr {
+                    font-weight: 700;
+                    border-bottom: 1px solid #eee;
+                    &:nth-child(even) {
+                        background: #fbfbfb;
+                    }
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                    td {
+                        padding: 15px 25px;
+                    }
+                }
+                tr td:nth-child(1) {
+                    width: 25px;
+                }
+            }
+            tfoot {
+                font-size: 30px;
+                font-weight: 700;
+                .total {
+                    color: $color-accent-1;
+                }
+                td {
+                    padding-top: 80px;
+                }
+            }
+        }
+    }
+}
