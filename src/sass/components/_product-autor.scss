@@ -1,0 +1,32 @@
+#sidebar {
+  .wrap-up {
+    margin-bottom: 24px;
+  }
+  .photo-square {
+    float: left;
+  }
+  .wrap-inner {
+    display: inline-block;
+    margin-left: 14px;
+  }
+  .name-author {
+    display: block;
+    font-size: 18px;
+    color: $color-dark-primary;
+    margin-bottom: 17px;
+  }
+  .btn {
+    padding: 7px 10px;
+    border: 1px solid $color-img-product;
+    font-size: 13px;
+    color: #707070;
+    margin-top: 20px;
+  }
+  .wrap-badges {
+    display: flex;
+    justify-content: space-between;
+  }
+  .width-inherit {
+    min-width: inherit;
+  }
+}
