@@ -1,0 +1,31 @@
+#aside-categories {
+    
+    li + li {
+        margin-top: 26px;
+    }
+    
+    li {
+        display: flex;
+    }
+
+    .fa {
+        color: $color-accent-1;
+        }
+
+    a {
+        margin-left: 13px;
+        font-size: 15px;
+        line-height: 1.5;
+        color: $color-dark-primary;
+        transition: color .3s;
+
+            &:hover {
+                color: $color-accent-1;
+            }
+        }
+    
+    .counter {
+        color: $color-inactive-secondary;
+        margin-left: auto;
+    }
+}
