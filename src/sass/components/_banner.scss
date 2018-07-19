@@ -1,5 +1,6 @@
-#banner {
+#section {
     background: $color-light-secondary;
+    height: 705px;
 
     .col-12 {
         background: $color-img-photo;
@@ -8,16 +9,20 @@
         display: flex;
         align-items: center;
         height: 438px;
+        justify-content: center;
         
         .author {
+            background: $color-accent-1;
             display: flex;
             align-items: center;
             height: 216px;
             line-height: 36px;
+            justify-content: center;
 
             p {
                 color: $color-light-primary;
-                font-size: 30px;               
+                font-size: 30px;
+                margin-bottom: 0;             
             }
 
             a {
