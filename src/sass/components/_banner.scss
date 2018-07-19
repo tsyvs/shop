@@ -1,0 +1,30 @@
+#banner {
+    background: $color-light-secondary;
+
+    .col-12 {
+        background: $color-img-photo;
+        box-shadow: 0 0 30px #ccc;
+        padding: 0 32px;
+        display: flex;
+        align-items: center;
+        height: 438px;
+        
+        .author {
+            display: flex;
+            align-items: center;
+            height: 216px;
+            line-height: 36px;
+
+            p {
+                color: $color-light-primary;
+                font-size: 30px;               
+            }
+
+            a {
+                color: $color-dark-primary;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
