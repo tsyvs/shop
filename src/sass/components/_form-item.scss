@@ -1,0 +1,54 @@
+#upload-your-item {
+
+.container {
+    background: $color-light-primary;
+    border: 1px solid $color-border-2;
+    height: 1112px;
+   
+
+
+    .title {
+        font-size: 24px;
+        color: $color-dark-primary;
+        border-bottom: 1px solid $color-border-2;
+    }
+
+    label {
+        color: #444;
+        font-size: 15px;
+        margin-left: 45px ;
+
+        sup {
+            color: $color-accent-1;
+        }
+    }
+
+    input, 
+    textarea, 
+    select {
+        width: 900px;
+        height: 38px;
+        font-size: 15px;
+        color: $color-border-2;
+        transition: border .3s;
+        padding-left: 18px;
+        margin-right: 48px;
+        margin-top: 22px;
+    } 
+
+    textarea {
+        height: initial;
+        padding: 13px;
+    }
+
+    button {
+        background: $color-accent-1;
+        color: $color-light-primary;
+        height: 46px;
+        width: 124px;
+        margin-top: 42px;
+        margin-left: 220px;
+        border: 0;
+    }
+}
+}
