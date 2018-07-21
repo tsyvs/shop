@@ -6,10 +6,16 @@
    padding-bottom: 174px;
 }
 
-#form-search h2, p {
+#form-search h2 {
     color: $color-light-primary;
     line-height: 30px;
 }
+
+#form-search p {
+    color: $color-light-primary;
+    line-height: 30px;
+}
+
 
 #form-search h2 {  
    font-size: 48px;
