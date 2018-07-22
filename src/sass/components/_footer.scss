@@ -1,23 +1,28 @@
 #footer {
     background: $color-dark-primary;
+    font-family: $font-family-base;
 
-    h3.title {
-        padding-bottom: 21px;
-        font-family: $font-family-base;
-        font-weight: 700;
+    .colums {
+        padding-top: 115px;
+        padding-bottom: 95px;
+    }
+    
+    .title {
         font-size: 22px;
+        font-weight: 700;
         color: $color-light-primary;
     }
-
+    
     .title::after {
         content: '';
         display: block;
         width: 51px;
         height: 3px;
         background: $color-accent-1;
-        position: absolute;
+        // position: absolute;
+        margin-top: 21px;
     }
-
+    
     .copyright {
         border-top: 1px solid #424d53;
         text-align: center; 
