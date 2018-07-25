@@ -1,0 +1,16 @@
+#product-info {
+  .info {
+    color: $color-dark-primary;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .info + .info {
+    margin-top: 30px;
+  }
+
+  .data {
+    color: $color-dark-secondary;
+  }
+}
+

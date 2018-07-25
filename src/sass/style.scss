@@ -5,14 +5,19 @@
 
 @import "normalize";
 @import "grid";
+@import "fontawesome";
 
 // custom styles here
 @import "components/page-layout";
 @import "components/main-menu";
-@import "components/search";
-@import "components/author-photo";
-@import "components/banner";
-@import "components/aside-section.scss";
-@import "components/choose-us-section.scss";
 
-@import "fontawesome";
+@import "components/search";
+@import "components/banner";
+
+@import "components/author-photo";
+@import "components/counter";
+
+@import "components/aside-product-info";
+@import "components/aside-section";
+
+@import "components/choose-us-section";
