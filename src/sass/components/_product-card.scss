@@ -22,7 +22,7 @@
         }
     }
     .product-data {
-        width: 100%;
+        flex-grow: 1;
         .product-info {
             padding: 24px 32px;
             .product-title {
