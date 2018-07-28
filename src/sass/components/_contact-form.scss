@@ -1,0 +1,47 @@
+#contact-form {
+    background: $body-bg;
+    font-family: $font-family-base;
+    
+    .title {
+        padding-top: 60px;
+        padding-bottom: 21px;
+        font-weight: 600;
+        font-size: 24px;
+        color: #333;
+    }
+
+    input,
+    textarea {
+        font-size: 15px;
+        font-weight: 400;
+        background: #f1f4f5;
+        color: #7a7a7a;
+        border: none;
+    }
+
+    input {
+        width: 350px;
+        height: 43px;
+        padding-left: 17px;;
+    }
+
+    input + input {
+        margin-left: 21px;;
+    }
+
+    input:focus {
+        outline: 0;
+    }
+    
+    .second-row {
+        margin-top: 28px;
+        margin-bottom: 22px;;
+    }
+
+    textarea {
+        width: 725px;
+        height: 193px;
+        resize: none;
+        padding: 16px 17px;;
+    }
+}

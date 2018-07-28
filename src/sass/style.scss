@@ -5,14 +5,28 @@
 
 @import "normalize";
 @import "grid";
+@import "fontawesome";
 
 // custom styles here
 @import "components/page-layout";
 @import "components/main-menu";
+
 @import "components/search";
+@import "components/contact-form";
+@import "components/footer";
+@import "components/filters";
+@import "components/progressbar";
+
+@import "components/banner";
+
 @import "components/author-photo";
-@import "components/aside-section";
-@import "components/choose-us-section";
 @import "components/aside-categories";
 @import "components/form-item";
-@import "fontawesome";
+
+@import "components/counter";
+
+@import "components/product-autor";
+@import "components/aside-product-info";
+@import "components/aside-section";
+
+@import "components/choose-us-section";

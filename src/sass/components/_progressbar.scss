@@ -1,0 +1,84 @@
+#progress {
+    border: 1px solid #dcdcdc;
+    background: $color-light-primary;
+    padding: 40px 50px 50px 42px;
+    font-size: 15px;
+    color: #263238;
+    line-height: 24px;
+  
+   h2 {
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    p {
+        margin-bottom: 49px; 
+        color: #707070;
+    }
+}
+
+#skills {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 25px;
+    display: block;
+} 
+    
+.skill-name {
+    font-weight: 500;
+    font-style: italic;
+    display: block;
+    position: relative;
+    margin-bottom: 17px;
+}
+
+.skill-percent {
+    font-style: normal;
+    position: absolute;
+    right: 0;
+}
+
+#progress .progress-bar-80,
+#progress .progress-bar-90,
+#progress .progress-bar-70,
+#progress .progress {
+    height: 14px;
+    background: #f4f4f4;
+    border-radius: 5px;  
+}
+
+#progress .progress-bar-80,
+#progress .progress-bar-90,
+#progress .progress-bar-70 {
+    width: 0%;
+    transition: width .6s .3s;  
+}
+
+.progress + .skill-name {
+    margin-top: 25px;
+}
+
+#progress .progress  .progress-bar {
+    background: repeating-linear-gradient(
+        61deg,
+        $color-img-photo,
+        $color-img-photo 16px,
+       #cbcbcb 16px,
+       #cbcbcb 32px 
+       );
+}
+
+#progress .progress:hover .progress-bar-80 {
+    width: 80%;
+}
+
+#progress .progress:hover .progress-bar-90 {
+    width: 90%;
+}
+
+#progress .progress:hover .progress-bar-70 {
+    width:70%;
+ }
+

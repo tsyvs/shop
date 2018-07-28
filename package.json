@@ -25,7 +25,7 @@
   "dependencies": {
     "browser-sync": "latest",
     "del": "latest",
-    "gulp": "latest",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "latest",
     "gulp-minify-css": "latest",
     "gulp-rigger": "latest",
@@ -34,6 +34,7 @@
     "gulp-tinypng": "latest",
     "gulp-uglify": "latest",
     "gulp-watch": "latest",
+    "npm": "^6.2.0",
     "run-sequence": "latest"
   },
   "devDependencies": {}

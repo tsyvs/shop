@@ -9,7 +9,7 @@ $body-color:   #000;
 $body-bg:      #fff;
 
 $headings-margin-bottom:   1rem;
-$paragraph-margin-bottom:  1rem;
+$paragraph-margin-bottom:  0;
 
 $link-color: inherit;
 $link-decoration: none;
@@ -25,6 +25,7 @@ $color-light-primary:      #fff;
 $color-light-secondary:    #f4f6f5;
 
 $color-dark-primary:       #263238;
+$color-dark-secondary:     #70838d;
 $color-dark-text:          #b0bec5;
 
 $color-inactive-primary:   #e8e8e8;
@@ -35,6 +36,7 @@ $color-accent-2:           #e74c3c;
 $color-accent-3:           #ffa726;
 $color-accent-4:           #42a5f5;
 $color-accent-5:           #546e7a;
+$color-accent-6:           #7cb240bf;
 
 $color-border-1:           #e7ecf2;
 $color-border-2:           #d7d7d7;
@@ -50,3 +52,4 @@ $color-soc-pn:             #d32f2f;
 $shadow-btn:               #455a64;
 $shadow-btn-hover:         #cad7e4;
 $shadow-product:           $color-border-2;
+$shadow-promo:             #ccc;
