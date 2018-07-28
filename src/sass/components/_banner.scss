@@ -1,0 +1,40 @@
+#promo {
+    padding-top: 130px;
+    padding-bottom: 137px;
+    background: $color-light-secondary;
+
+    .promo-wrapper {
+        margin: 32px;
+        padding: 115px 0;
+        background: $color-img-photo;
+        box-shadow: 0 0 30px $shadow-promo;
+    }
+
+    .promo-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 653px;
+        height: 216px;
+        margin: 0 auto;
+        line-height: 36px;
+        background: $color-accent-1;
+
+        .promo-text {
+            margin-right: 48px;             
+            margin-bottom: 0;
+            color: $color-light-primary;
+            font-size: 30px;
+        }
+
+        .btn {
+            width: 225px;
+            height: 63px;
+            padding: 13px 0;
+            color: $color-dark-primary;
+            background: $color-light-primary;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+}
