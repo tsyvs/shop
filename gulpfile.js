@@ -58,7 +58,7 @@ gulp.task('webserver', function() {
 //     rimraf(path.clean, cb);
 // });
 
-gulp.task('html:build', function() {
+gulp.task('html:build', function () {
     gulp.src(path.src.html)
         .pipe(rigger())
         .pipe(gulp.dest(path.build.html))
@@ -66,16 +66,16 @@ gulp.task('html:build', function() {
 });
 
 // gulp.task('js:build', function () {
-//     gulp.src(path.src.js) 
-//         .pipe(rigger()) 
-//         .pipe(sourcemaps.init()) 
-//         .pipe(uglify()) 
-//         .pipe(sourcemaps.write()) 
+//     gulp.src(path.src.js)
+//         .pipe(rigger())
+//         .pipe(sourcemaps.init())
+//         .pipe(uglify())
+//         .pipe(sourcemaps.write())
 //         .pipe(gulp.dest(path.build.js))
 //         .pipe(reload({stream: true}));
 // });
 
-gulp.task('style:build', function() {
+gulp.task('style:build', function () {
     gulp.src(path.src.style)
         .pipe(sourcemaps.init())
         .pipe(sass({
@@ -92,27 +92,28 @@ gulp.task('style:build', function() {
         .pipe(reload({ stream: true }));
 });
 
-gulp.task('tinypng', function() {
-    return gulp.src(
-            [
-                './src/img_to_minify/**/*.jpg',
-                './src/img_to_minify/**/*.png'
-            ]
-        )
-        .pipe(tinypng('yHlxibxjqM7oHF8QyOtZ239Cr4gBBomL'))
-        .pipe(gulp.dest('./src/img'));
+gulp.task('tinypng', function () {
+	return gulp.src(
+			[
+				'./src/img_to_minify/**/*.jpg',
+				'./src/img_to_minify/**/*.png'
+			]
+		)
+		.pipe(tinypng('7DjDuuwkwESUXiHtxULH61Xskr8HVF3U'))
+		.pipe(gulp.dest('./src/img'));
 });
 
-gulp.task('del', function() {
-    return del(
-            [
-                './src/img_to_minify/**/*.jpg',
-                './src/img_to_minify/**/*.png'
-            ], { force: true }
-        )
-        .then(paths => {
-            console.log('Deleted: ', paths.join('\n'));
-        });
+gulp.task('del', function () {
+	return del(
+			[
+				'./src/img_to_minify/**/*.jpg',
+				'./src/img_to_minify/**/*.png'
+			],
+			{ force: true }
+		)
+		.then(paths => {
+			console.log('Deleted: ', paths.join('\n'));
+})
 });
 
 gulp.task('minify', function() {
