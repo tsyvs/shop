@@ -1,7 +1,6 @@
 .count {
     &::before,
-    &::after
-    {
+    &::after {
         color: $color-dark-text;
     }
 
@@ -13,4 +12,3 @@
         content: ")";
     }
 }
-

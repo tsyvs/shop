@@ -1,0 +1,38 @@
+#choose-us {
+  background: $color-dark-primary;
+  text-align: center;
+
+  .title {
+    font-size: 36px;
+    line-height: 1.2;
+    color: $color-light-primary;
+    margin-bottom: 83px;
+  }
+
+  .img {
+    width: 113px;
+    height: 113px;
+    background: $color-img-photo;
+    margin: 0 auto 10px;
+  }
+
+  .subtitle {
+    margin-bottom: 10px;
+
+    a {
+      font-size: 24px;
+      line-height: 60px;
+      color: $color-light-primary;
+
+      &:hover {
+        color: $color-accent-1;
+      }
+    }
+  }
+
+  .desc {
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-dark-text;
+  }
+}
