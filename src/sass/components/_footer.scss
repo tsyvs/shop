@@ -2,14 +2,17 @@
     background: $color-dark-primary;
     font-family: $font-family-base;
 
-    .colums {
+    .columns {
         padding-top: 115px;
         padding-bottom: 95px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     
     .title {
         font-size: 22px;
-        font-weight: 700;
+        font-weight: 500;
         color: $color-light-primary;
     }
     
@@ -19,8 +22,8 @@
         width: 51px;
         height: 3px;
         background: $color-accent-1;
-        // position: absolute;
-        margin-top: 21px;
+        margin-top: 20px;
+        margin-bottom: 25px;
     }
     
     .copyright {

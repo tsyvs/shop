@@ -9,13 +9,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="sidebar-left">
-    <!-- <body class="no-sidebar"> -->
-    <!-- <body class="sidebar-right"> -->
+<body class="page-catalog sidebar-left">
 
     <header>
         <!-- First line -->
-        <!-- COMPONENT main menu -->
+        <!-- COMPONENT main-menu -->
         <nav id="main-menu">
             <ul class="container">
                 <li><a href="#">Home</a></li>
@@ -30,40 +28,522 @@
                 <li><a href="#">Help</a></li>
             </ul>
         </nav>
-        <!-- / COMPONENT main menu -->
+        <!-- / COMPONENT main-menu -->
     </header>
 
-    <!-- //= ./html_components/header.html -->
-    <div id="main-wrapper">
-        <main>
-            main contents here
-        </main>
+    <div id="breadcrumbs" class="container">
+        <a href="index.html">Home</a> &nbsp;-&nbsp;
+        <span>Catalog</span>
+    </div>
 
-        <aside>
-            <!-- COMPONENT aside-section -->
-            <!-- HOWTO: have to be placed into <aside> -->
-            <section class="section">
-              <div class="title">
-                Product Price
-              </div>
-            </section>
-            <!-- / COMPONENT aside-section -->
-        </aside>
+    <div id="main-wrapper" class="container">
+        <div class="row">
+
+            <main id="main" class="col-9">
+                <div id="filters">
+                   <div id="sort-by">
+                      <a href="#">
+                         <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+                      </a>
+                      <div id="sort-order">Sort by: New Items<a href="#"><i class="fa fa-sort" aria-hidden="true"></i></a></div>
+                   </div>
+                   <div id="navigation">
+                      <a href="#">
+                         <i class="fa fa-th-list" aria-hidden="true"></i>
+                      </a>
+                      <a href="#">
+                         <i class="fa fa-th-large" aria-hidden="true"></i>
+                      </a>
+                   </div>
+                </div>
+
+                <!-- COMPONENT product card -->
+                <div class="product">
+                    <div class="product-img"><img src="img/product-photo.jpg" alt="Product Photo"></div>
+                    <div class="product-data">
+                        <div class="product-info">
+                            <div class="product-title">
+                                <span class="product-price">$59</span>
+                                <h3><a href="#">Funy Doll Face</a></h3>
+                                <span class="product-category">Illastration</span>
+                            </div>
+                            <div class="product-description">
+                                <span class="counter-sales">Sales<span class="counter">14</span></span>
+                                <p>Pimply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="product-autor">
+                            <span class="product-badges">
+                                <span class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="counter">05</span><span class="separete">|</span><i class="fa fa-comment-o" aria-hidden="true"></i><span
+                                    class="counter">10</span><span class="separete">|</span><i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span class="counter">20</span>
+                            </span>
+                            <img class="photo-small" src="img/autor-photo.png" alt="Autor Photo">
+                            <span class="autor-name">PsdBosS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /COMPONENT product card -->
+                <!-- COMPONENT product card -->
+                <div class="product">
+                    <div class="product-img"><img src="img/product-photo.jpg" alt="Product Photo"></div>
+                    <div class="product-data">
+                        <div class="product-info">
+                            <div class="product-title">
+                                <span class="product-price">$59</span>
+                                <h3><a href="#">Funy Doll Face</a></h3>
+                                <span class="product-category">Illastration</span>
+                            </div>
+                            <div class="product-description">
+                                <span class="counter-sales">Sales<span class="counter">14</span></span>
+                                <p>Pimply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="product-autor">
+                            <span class="product-badges">
+                                <span class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="counter">05</span><span class="separete">|</span><i class="fa fa-comment-o" aria-hidden="true"></i><span
+                                    class="counter">10</span><span class="separete">|</span><i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span class="counter">20</span>
+                            </span>
+                            <img class="photo-small" src="img/autor-photo.png" alt="Autor Photo">
+                            <span class="autor-name">PsdBosS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /COMPONENT product card -->
+                <!-- COMPONENT product card -->
+                <div class="product">
+                    <div class="product-img"><img src="img/product-photo.jpg" alt="Product Photo"></div>
+                    <div class="product-data">
+                        <div class="product-info">
+                            <div class="product-title">
+                                <span class="product-price">$59</span>
+                                <h3><a href="#">Funy Doll Face</a></h3>
+                                <span class="product-category">Illastration</span>
+                            </div>
+                            <div class="product-description">
+                                <span class="counter-sales">Sales<span class="counter">14</span></span>
+                                <p>Pimply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="product-autor">
+                            <span class="product-badges">
+                                <span class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="counter">05</span><span class="separete">|</span><i class="fa fa-comment-o" aria-hidden="true"></i><span
+                                    class="counter">10</span><span class="separete">|</span><i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span class="counter">20</span>
+                            </span>
+                            <img class="photo-small" src="img/autor-photo.png" alt="Autor Photo">
+                            <span class="autor-name">PsdBosS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /COMPONENT product card -->
+                <!-- COMPONENT product card -->
+                <div class="product">
+                    <div class="product-img"><img src="img/product-photo.jpg" alt="Product Photo"></div>
+                    <div class="product-data">
+                        <div class="product-info">
+                            <div class="product-title">
+                                <span class="product-price">$59</span>
+                                <h3><a href="#">Funy Doll Face</a></h3>
+                                <span class="product-category">Illastration</span>
+                            </div>
+                            <div class="product-description">
+                                <span class="counter-sales">Sales<span class="counter">14</span></span>
+                                <p>Pimply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="product-autor">
+                            <span class="product-badges">
+                                <span class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="counter">05</span><span class="separete">|</span><i class="fa fa-comment-o" aria-hidden="true"></i><span
+                                    class="counter">10</span><span class="separete">|</span><i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span class="counter">20</span>
+                            </span>
+                            <img class="photo-small" src="img/autor-photo.png" alt="Autor Photo">
+                            <span class="autor-name">PsdBosS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /COMPONENT product card -->
+                <!-- COMPONENT product card -->
+                <div class="product">
+                    <div class="product-img"><img src="img/product-photo.jpg" alt="Product Photo"></div>
+                    <div class="product-data">
+                        <div class="product-info">
+                            <div class="product-title">
+                                <span class="product-price">$59</span>
+                                <h3><a href="#">Funy Doll Face</a></h3>
+                                <span class="product-category">Illastration</span>
+                            </div>
+                            <div class="product-description">
+                                <span class="counter-sales">Sales<span class="counter">14</span></span>
+                                <p>Pimply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="product-autor">
+                            <span class="product-badges">
+                                <span class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="counter">05</span><span class="separete">|</span><i class="fa fa-comment-o" aria-hidden="true"></i><span
+                                    class="counter">10</span><span class="separete">|</span><i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span class="counter">20</span>
+                            </span>
+                            <img class="photo-small" src="img/autor-photo.png" alt="Autor Photo">
+                            <span class="autor-name">PsdBosS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /COMPONENT product card -->
+                <!-- COMPONENT product card -->
+                <div class="product">
+                    <div class="product-img"><img src="img/product-photo.jpg" alt="Product Photo"></div>
+                    <div class="product-data">
+                        <div class="product-info">
+                            <div class="product-title">
+                                <span class="product-price">$59</span>
+                                <h3><a href="#">Funy Doll Face</a></h3>
+                                <span class="product-category">Illastration</span>
+                            </div>
+                            <div class="product-description">
+                                <span class="counter-sales">Sales<span class="counter">14</span></span>
+                                <p>Pimply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="product-autor">
+                            <span class="product-badges">
+                                <span class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="counter">05</span><span class="separete">|</span><i class="fa fa-comment-o" aria-hidden="true"></i><span
+                                    class="counter">10</span><span class="separete">|</span><i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span class="counter">20</span>
+                            </span>
+                            <img class="photo-small" src="img/autor-photo.png" alt="Autor Photo">
+                            <span class="autor-name">PsdBosS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /COMPONENT product card -->
+                <!-- COMPONENT product card -->
+                <div class="product">
+                    <div class="product-img"><img src="img/product-photo.jpg" alt="Product Photo"></div>
+                    <div class="product-data">
+                        <div class="product-info">
+                            <div class="product-title">
+                                <span class="product-price">$59</span>
+                                <h3><a href="#">Funy Doll Face</a></h3>
+                                <span class="product-category">Illastration</span>
+                            </div>
+                            <div class="product-description">
+                                <span class="counter-sales">Sales<span class="counter">14</span></span>
+                                <p>Pimply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="product-autor">
+                            <span class="product-badges">
+                                <span class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="counter">05</span><span class="separete">|</span><i class="fa fa-comment-o" aria-hidden="true"></i><span
+                                    class="counter">10</span><span class="separete">|</span><i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span class="counter">20</span>
+                            </span>
+                            <img class="photo-small" src="img/autor-photo.png" alt="Autor Photo">
+                            <span class="autor-name">PsdBosS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /COMPONENT product card -->
+                <!-- COMPONENT product card -->
+                <div class="product">
+                    <div class="product-img"><img src="img/product-photo.jpg" alt="Product Photo"></div>
+                    <div class="product-data">
+                        <div class="product-info">
+                            <div class="product-title">
+                                <span class="product-price">$59</span>
+                                <h3><a href="#">Funy Doll Face</a></h3>
+                                <span class="product-category">Illastration</span>
+                            </div>
+                            <div class="product-description">
+                                <span class="counter-sales">Sales<span class="counter">14</span></span>
+                                <p>Pimply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="product-autor">
+                            <span class="product-badges">
+                                <span class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="counter">05</span><span class="separete">|</span><i class="fa fa-comment-o" aria-hidden="true"></i><span
+                                    class="counter">10</span><span class="separete">|</span><i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span class="counter">20</span>
+                            </span>
+                            <img class="photo-small" src="img/autor-photo.png" alt="Autor Photo">
+                            <span class="autor-name">PsdBosS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /COMPONENT product card -->
+                <!-- COMPONENT product card -->
+                <div class="product">
+                    <div class="product-img"><img src="img/product-photo.jpg" alt="Product Photo"></div>
+                    <div class="product-data">
+                        <div class="product-info">
+                            <div class="product-title">
+                                <span class="product-price">$59</span>
+                                <h3><a href="#">Funy Doll Face</a></h3>
+                                <span class="product-category">Illastration</span>
+                            </div>
+                            <div class="product-description">
+                                <span class="counter-sales">Sales<span class="counter">14</span></span>
+                                <p>Pimply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="product-autor">
+                            <span class="product-badges">
+                                <span class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="counter">05</span><span class="separete">|</span><i class="fa fa-comment-o" aria-hidden="true"></i><span
+                                    class="counter">10</span><span class="separete">|</span><i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span class="counter">20</span>
+                            </span>
+                            <img class="photo-small" src="img/autor-photo.png" alt="Autor Photo">
+                            <span class="autor-name">PsdBosS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /COMPONENT product card -->
+                <!-- COMPONENT product card -->
+                <div class="product">
+                    <div class="product-img"><img src="img/product-photo.jpg" alt="Product Photo"></div>
+                    <div class="product-data">
+                        <div class="product-info">
+                            <div class="product-title">
+                                <span class="product-price">$59</span>
+                                <h3><a href="#">Funy Doll Face</a></h3>
+                                <span class="product-category">Illastration</span>
+                            </div>
+                            <div class="product-description">
+                                <span class="counter-sales">Sales<span class="counter">14</span></span>
+                                <p>Pimply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="product-autor">
+                            <span class="product-badges">
+                                <span class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="counter">05</span><span class="separete">|</span><i class="fa fa-comment-o" aria-hidden="true"></i><span
+                                    class="counter">10</span><span class="separete">|</span><i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span class="counter">20</span>
+                            </span>
+                            <img class="photo-small" src="img/autor-photo.png" alt="Autor Photo">
+                            <span class="autor-name">PsdBosS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /COMPONENT product card -->
+                <!-- COMPONENT product card -->
+                <div class="product">
+                    <div class="product-img"><img src="img/product-photo.jpg" alt="Product Photo"></div>
+                    <div class="product-data">
+                        <div class="product-info">
+                            <div class="product-title">
+                                <span class="product-price">$59</span>
+                                <h3><a href="#">Funy Doll Face</a></h3>
+                                <span class="product-category">Illastration</span>
+                            </div>
+                            <div class="product-description">
+                                <span class="counter-sales">Sales<span class="counter">14</span></span>
+                                <p>Pimply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="product-autor">
+                            <span class="product-badges">
+                                <span class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="counter">05</span><span class="separete">|</span><i class="fa fa-comment-o" aria-hidden="true"></i><span
+                                    class="counter">10</span><span class="separete">|</span><i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span class="counter">20</span>
+                            </span>
+                            <img class="photo-small" src="img/autor-photo.png" alt="Autor Photo">
+                            <span class="autor-name">PsdBosS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /COMPONENT product card -->
+                <!-- COMPONENT product card -->
+                <div class="product">
+                    <div class="product-img"><img src="img/product-photo.jpg" alt="Product Photo"></div>
+                    <div class="product-data">
+                        <div class="product-info">
+                            <div class="product-title">
+                                <span class="product-price">$59</span>
+                                <h3><a href="#">Funy Doll Face</a></h3>
+                                <span class="product-category">Illastration</span>
+                            </div>
+                            <div class="product-description">
+                                <span class="counter-sales">Sales<span class="counter">14</span></span>
+                                <p>Pimply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                        <div class="product-autor">
+                            <span class="product-badges">
+                                <span class="rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </span>
+                                <span class="counter">05</span><span class="separete">|</span><i class="fa fa-comment-o" aria-hidden="true"></i><span
+                                    class="counter">10</span><span class="separete">|</span><i class="fa fa-heart-o" aria-hidden="true"></i>
+                                <span class="counter">20</span>
+                            </span>
+                            <img class="photo-small" src="img/autor-photo.png" alt="Autor Photo">
+                            <span class="autor-name">PsdBosS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /COMPONENT product card -->
+            </main>
+    
+            <aside id="aside" class="col-3">
+                <!-- COMPONENT aside-categories -->
+                <section id="aside-categories" class="section">
+                    <div class="title">Categories</div>
+                    <ul>
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">WordPress <span class="counter">150</span></a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Joomla <span class="counter">100</span></a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">PSD <span class="counter">50</span></a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Plugins <span class="counter">60</span></a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="#">Components <span class="counter">150</span></a>
+                        </li>
+                    </ul>
+                </section>
+                <!--/ COMPONENT aside-categories -->
+
+                <!-- COMPONENT aside-price-range -->
+                <section id="aside-price-range" class="section">
+                    <div class="title">Price Range</div>
+                </section>
+                <!--/ COMPONENT aside-price-range -->
+
+                <!-- COMPONENT aside-top-sellers -->
+                <section id="aside-top-sellers" class="section">
+                    <div class="title">Top Sellers</div>
+                </section>
+                <!--/ COMPONENT aside-top-sellers -->
+            </aside>
+
+        </div>
 
     </div>
 
+    <!-- COMPONENT search -->
     <aside id="search">
-        <h2>Welcome To Foxtar Market Place!</h2>
         <p>Premium WordPress Themes, Web Templates and Many More ...</p>
         <form id="form-search">
             <input type="search" class="form-control" placeholder="Search Your Keywords . . . ">
-            <button type="submit">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </button>
+            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
         </form>
     </aside>
+    <!-- / COMPONENT search -->
 
-    <!-- //= ./html_components/footer.html -->
+    <!-- COMPONENT footer -->
+    <footer id="footer">
+        <div class="columns container">
+            <div class="column">
+                <span class="title">About Company</span>
+            </div>
+            <div class="column">
+                <span class="title">Join Our Community</span>
+            </div>
+            <div class="column">
+                <span class="title">Need Help?</span>
+            </div>
+            <div class="column">
+                <span class="title">Follow Us On</span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</p>
+        </div>
+    </footer>
+    <!-- / COMPONENT footer -->
 </body>
 
 </html>

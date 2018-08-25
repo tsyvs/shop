@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,115 +9,113 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="no-sidebar"> 
-<!-- <body class="sidebar-left"> -->
-<!-- <body class="sidebar-right"> -->
+<body class="no-sidebar front">
+    <!-- <body class="sidebar-left"> -->
+    <!-- <body class="sidebar-right"> -->
 
-    <!--//= ./html_components/header.html-->
-    <main>
-        main contents here
-    </main>
-    <!--//= ./html_components/footer.html-->
+    <header>
+        <!-- First line -->
+        <!-- COMPONENT main-menu -->
+        <nav id="main-menu">
+            <ul class="container">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">WordPress</a></li>
+                <li><a href="#">Joomla</a></li>
+                <li><a href="#">PSD</a></li>
+                <li><a href="#">Plugins</a></li>
+                <li><a href="#">Components</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+        <!-- / COMPONENT main-menu -->
+    </header>
 
-    <aside id="form-search">
+    <div id="main-wrapper">
+        <main>
+            <!-- main contents here -->
+            
+            <!-- COMPONENT choose-us-section -->
+            <section id="choose-us">
+              <div class="container">
+                <h2 class="title">Why you choose foxtar market place?</h2>
+                <div class="row">
+                  <div class="col-4">
+                    <div class="img"></div>
+                    <h3 class="subtitle"><a href="#">Easily Buy &amp; Sell</a></h3>
+                    <p class="desc">Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.</p>
+                  </div>
+                  <div class="col-4">
+                    <div class="img"></div>
+                    <h3 class="subtitle"><a href="#">Quality Products</a></h3>
+                    <p class="desc">Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.</p>
+                  </div>
+                  <div class="col-4">
+                    <div class="img"></div>
+                    <h3 class="subtitle"><a href="#">100% Secure Payment</a></h3>
+                    <p class="desc">Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- / COMPONENT choose-us-section -->
+            
+            <!-- COMPONENT banner -->
+            <section id="promo">
+                <div class="container">
+                    <div class="promo-wrapper">
+                        <div class="promo-content">
+                            <p class="promo-text float-left">Over 20,000 Author<br>Are Involved Here!</p>
+                            <a href="#" class="btn btn-default float-right">Become A Author</a>
+                        </div>
+                    </div>        
+                </div>
+            </section>
+            <!-- / COMPONENT banner -->
+
+        </main>
+    </div>
+    
+    <!-- COMPONENT search -->
+    <aside id="search">
         <h2>Welcome To Foxtar Market Place!</h2>
         <p>Premium WordPress Themes, Web Templates and Many More ...</p>
-        <form id="search">
-            <button href="#search">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </button>
-                <input type="search" class="form-control" placeholder="Search Your Keywords . . . ">
-            </form>
+        <form id="form-search">
+            <input type="search" class="form-control" placeholder="Search Your Keywords . . . ">
+            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
     </aside>
+    <!-- / COMPONENT search -->
+    
+    <!-- //= ./html_components/author-photo.html -->
 
-    <!-- COMPONENT banner -->
-    <section id="promo">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 promo-wrapper">
-                    <div class="promo-content">
-                        <p class="promo-text float-left">Over 20,000 Author<br>Are Involved Here!</p>
-                        <a href="#" class="btn btn-default float-right">Become A Author</a>
-                    </div>
-                </div>        
+    <!-- //= ./html_components/aside-section.html -->
+
+    <!-- //= ./html_components/contact-form.html -->
+
+    <!-- COMPONENT footer -->
+    <footer id="footer">
+        <div class="columns container">
+            <div class="column">
+                <span class="title">About Company</span>
+            </div>
+            <div class="column">
+                <span class="title">Join Our Community</span>
+            </div>
+            <div class="column">
+                <span class="title">Need Help?</span>
+            </div>
+            <div class="column">
+                <span class="title">Follow Us On</span>
             </div>
         </div>
-    </div>
-    <!-- / COMPONENT banner -->
-
-    
-    <!-- choose-us-section -->
-    <div id="choose-us">
-      <div class="container">
-        <h2 class="title">Why you choose foxtar market place?</h2>
-        <div class="row">
-          <div class="col-4">
-            <div class="img"></div>
-            <h3 class="subtitle"><a href="#">Easily Buy &amp; Sell</a></h3>
-            <p class="desc">Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.</p>
-          </div>
-          <div class="col-4">
-            <div class="img"></div>
-            <h3 class="subtitle"><a href="#">Quality Products</a></h3>
-            <p class="desc">Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.</p>
-          </div>
-          <div class="col-4">
-            <div class="img"></div>
-            <h3 class="subtitle"><a href="#">100% Secure Payment</a></h3>
-            <p class="desc">Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.</p>
-          </div>
+        <div class="copyright">
+            <p>&copy; 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</p>
         </div>
-      </div>
-    </div>
-    <!-- /choose-us-section -->
-    
-    <!-- Component  ASIDE-SECTION -->
-    <aside id="sidebar">
-      <div class="section">
-        <div class="title">
-          Product Price
-        </div>
-    
-      </div>
-    </aside>
-    <!-- /Component  ASIDE-SECTION -->
-    
-    <!-- //= ./html_components/footer.html -->
-
-        <div id="contact-form">
-            <h2 class="title">Drop Us A Message</h2>
-            <form>
-                <input type="text" class="form-control" placeholder="Name*">
-                <input type="email" class="form-control" placeholder="Email*">
-                <div class="second-row">
-                    <textarea class="form-control" placeholder="Message*"></textarea>
-                </div>
-            </form>
-        </div>
-
-    <footer>
-        <!-- COMPONENT footer -->
-        <div id="footer">
-            <div class="colums">
-                <div>            
-                    <span class="title">About Company</span>
-                </div>
-                <div>
-                    <span class="title">Join Our Community</span>
-                </div>
-                <div>
-                    <span class="title">Need Help?</span>
-                </div>
-                <div>
-                    <span class="title">Follow Us On</span>
-                </div>
-            </div>
-                <div class="copyright">
-                    <p>&copy; 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</p>            
-                </div>
-            </div>
-        <!-- / COMPONENT footer -->
     </footer>
+    <!-- / COMPONENT footer -->
 </body>
 
 </html>
