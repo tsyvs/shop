@@ -1,0 +1,45 @@
+#filters {
+    position: relative;
+    height: 60px;
+    margin-bottom: 30px;
+    border: 1px solid $color-border-2;
+    background: $color-light-primary;
+    color: $color-dark-secondary;
+    font-size: 14px;
+}
+
+#sort-by {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    bottom: 20px;
+
+    i {
+        margin-right: 12px;
+    }
+}
+
+
+#sort-order{
+    display: inline-block;
+
+    i {
+        margin-left: 22px;
+    }
+}
+
+#navigation {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    i {
+        margin-left: 12px;
+        transition: color .3s;
+
+        &:hover {
+            color: $color-accent-1;
+        }
+    }
+}
+

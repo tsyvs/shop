@@ -1,23 +1,37 @@
 @import "variables";
 @import "mixin";
-
 @import "fonts";
-
 @import "normalize";
 @import "grid";
 @import "fontawesome";
 
 // custom styles here
 @import "components/page-layout";
+@import "components/page-styles";
+
 @import "components/main-menu";
+@import "components/breadcrumbs";
 
 @import "components/search";
+@import "components/contact-form";
+@import "components/footer";
+@import "components/filters";
+@import "components/progressbar";
+
 @import "components/banner";
 
 @import "components/author-photo";
+@import "components/sales-statement.scss";
+@import "components/product-card";
+@import "components/aside-categories";
+@import "components/form-item";
 
+<<<<<<< HEAD
 @import "components/dropdown-menu";
 
+=======
+@import "components/buttons";
+>>>>>>> dev
 @import "components/counter";
 
 @import "components/product-autor";
@@ -25,3 +39,6 @@
 @import "components/aside-section";
 
 @import "components/choose-us-section";
+
+// WIDGETS
+@import "nouislider";

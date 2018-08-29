@@ -1,0 +1,19 @@
+.page-catalog {
+   #main-wrapper {
+      margin-bottom: 110px;
+   }
+}
+
+#aside-price-range {
+   input {
+      position: absolute;
+      opacity: 0;
+      width: 1px;
+      height: 1px;
+   }
+}
+
+#price-range-slider {
+   margin: 0 8px 57px;
+   font-size: 15px;
+}
