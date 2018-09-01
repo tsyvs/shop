@@ -83,7 +83,7 @@
                 color: $color-accent-1;
                 margin-right: 16px;
             }
-            .separete {
+            .separate {
                 margin-left: 30px;
                 margin-right: 16px;
                 font-size: 16px;
@@ -100,5 +100,24 @@
                 }
             }
         }
+    }
+}
+
+.view-mode-line {
+    .product-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+
+.view-mode-tile {
+    .product-description,
+    .product-badges .counter-comment,
+    .product-badges .counter-wishlist,
+    .product-badges .fa-comment-o,
+    .product-badges .fa-heart-o,
+    .product-badges .separate {
+        display: none;
     }
 }

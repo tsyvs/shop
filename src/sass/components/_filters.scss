@@ -33,13 +33,16 @@
     right: 20px;
     top: 20px;
 
-    i {
+    span {
         margin-left: 12px;
         transition: color .3s;
 
-        &:hover {
+        &:hover,
+        &.active {
             color: $color-accent-1;
         }
     }
+
+
 }
 
